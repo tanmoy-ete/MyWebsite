@@ -463,6 +463,16 @@ body, html {
     width:185px;
     height: 96px;
   }
+  .submit-success {
+    color: #4BB543;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .submit-error {
+    color: #ff3333;
+    margin-top: 10px;
+    font-size: 14px;
+  }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     .Navbar {
@@ -583,4 +593,146 @@ body, html {
 .text-content-1 .underline.small {
   display: none;
 }
+  }
+
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Navbar Adjustments */
+    .Navbar {
+      padding: 20px 40px;
+    }
+    
+    .logo {
+      padding-left: 0;
+    }
+    
+    .nav-options {
+      width: 687px;
+      padding-right: 70px;
+  }
+    .nav-links {
+      gap: 15px;
+    }
+    .nav-link {
+      font-size: 14px;
+    }
+    
+    /* Hero Section Adjustments */
+    .Hero-section {
+      padding-top: 125px;
+      padding-left: 110px;
+      padding-right: 0px;
+      height: auto;
+      min-height: 52vh;
+    }
+    
+    .hero-content {
+      max-width: 415px;
+      height: auto;
+    }
+    
+    .hero-content h1 {
+      font-size: 48px;
+    }
+    
+    .hero-content h2 {
+      font-size: 24px;
+    }
+    
+    .profile-photo img {
+      margin-top: -185px;
+      height: 600px;
+      width: 350px;
+    }
+    
+    .image-content {
+      flex: 1 1 20%;
+    }
+    
+    .image-wrapper {
+      height: 200px;
+      width: 120px;
+      margin-top: -30px;
+    }
+    
+    .image-wrapper img {
+      width: 120%;
+      margin-left: -30px;
+    }
+    /* About Section Adjustments */
+    .about-section {
+      padding: 50px 8%;
+    }
+    
+    .about-content {
+      padding-left: 8%;
+      gap: 50px;
+    }
+    
+    .text-content h2,
+    #head1 {
+      width: 100%;
+      max-width: 450px;
+    }
+    
+    /* Education Section Adjustments */
+    .education-section {
+      padding: 50px 8%;
+    }
+    
+    .education-content {
+      padding: 0;
+    }
+    .education-content img {
+      height: 150px;
+      width: 140px;
+    }
+    
+    #image {
+      width: 140px;
+      height: 70px;
+    }
+    .text-content-1 {
+      flex: 1 1 45%;
+    }
+    .learn-more-btn {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+    /* Skills Section Adjustments */
+    .skills-section {
+      padding: 50px 11%;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 40px;
+    }
+    
+    /* Footer Adjustments */
+    .footer-container {
+      padding: 0 5%;
+      gap: 1.5rem;
+    }
+    .footer {
+      padding: 2rem 0 0;
+    }
+    
+    .footer-title {
+      font-size: 1.3rem;
+    }
+    /* General Typography Adjustments */
+    .section-title h1 {
+      font-size: 2rem;
+    }
+    
+    .text-content h2,
+    .text-content-1 h2 {
+      font-size: 1.5rem;
+    }
+    
+    .text-content p,
+    .text-content-1 p {
+      font-size: 16px;
+    }
   }
