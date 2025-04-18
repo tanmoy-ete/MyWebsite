@@ -540,7 +540,8 @@ body, html {
   flex: 1 1 100%;
 }
 .text-content-1 h2 {
-  width: 392px;
+  width: 100%;
+  text-align: center;
 }
 .image-content{
   display: none;
@@ -569,9 +570,17 @@ body, html {
   margin-bottom: 18px;
 }
 #head1 {
-  width: 380px;
+  width: 340px;
 }
 .text-content-1 p {
-  margin-right: 10px;
+  margin-right: 0px;
+  text-align: center;
+}
+.learn-more-btn-1 {
+  display: flex;
+  justify-content: center;
+}
+.text-content-1 .underline.small {
+  display: none;
 }
   }

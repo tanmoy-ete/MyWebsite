@@ -52,6 +52,7 @@ export default function Media() {
             {edu.details.map((text, idx) => (
               <p key={idx}>{text}</p>
             ))}
+            <div className="learn-more-btn-1">
             <button className='learn-more-btn'>
                     <a 
                         href={edu.link}
@@ -61,6 +62,7 @@ export default function Media() {
                         <p>Read More</p>
                     </a>
             </button>
+            </div>
           </motion.div>
         ))}
       </div>
