@@ -112,16 +112,24 @@ body, html {
     margin-bottom: 30px;
     color:white;
   }
-  
+  #btn1{
+    margin-bottom: 2px;
+  }
   .learn-more-btn {
     display: inline-block;
     background-color: transparent;
     border: 2px solid #ef5b4c;
-    padding: 8px 24px;
+    color: #ef5b4c;
+    padding: 12px 30px;
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .learn-more-btn:active {
+    transform: scale(0.98); /* Adds click feedback */
   }
   .learn-more-btn a{
     text-decoration: none;
@@ -134,11 +142,9 @@ body, html {
   }
     .learn-more-btn:hover {
     background-color: #ef5b4c;
+    color:white;
   }
   
-  .learn-more-btn:hover .email-link p {
-    color: white;
-  }
   .profile-photo {
     margin-top: 0;
     height: auto;
@@ -530,7 +536,9 @@ body, html {
     .skills-section {
       padding: 50px 5%;
     }
-    
+    .learn-more-btn{
+      display: none;
+    }
     .skills-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
@@ -593,6 +601,15 @@ body, html {
 }
 .text-content-1 .underline.small {
   display: none;
+}
+.learn-more-btn {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Removes mobile tap highlight */
+  touch-action: manipulation; /* Improves touch responsiveness */
+}
+
+.learn-more-btn:active {
+  transform: scale(0.98); /* Adds click feedback */
 }
   }
 

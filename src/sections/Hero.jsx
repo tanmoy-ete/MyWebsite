@@ -1,5 +1,5 @@
-import React from 'react'
-import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub} from 'react-icons/fa'
+import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -12,25 +12,26 @@ export default function Hero() {
         <a href="https://github.com/tanmoy-ete" target='_blank' rel="noopener noreferrer" className='social-icon'><FaGithub /></a>
       </div>
 
-      {/* Hero Content */}
       <div className="hero-content">
         <h2>Hello!!</h2>
         <h1>I am Tanmoy Debnath</h1>
         <p>
           I am a passionate Software Engineering Enthusiast, deeply driven to innovate and collaborate within the ever-evolving tech world. I am committed to mastering cutting-edge technologies and Artificial Intelligence, positioning myself as a future leader in intelligent systems and digital transformation.
         </p>
+        <div className="learn-more-btn-1">
         <a 
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=tanmoydebnath2204045@gmail.com" 
+          href="https://formsubmit.co/el/doreyi?subject=Hiring%20Request%20from%20Portfolio" 
           target="_blank"
           rel="noopener noreferrer"
           className="learn-more-btn"
         >
-          <p>Hire me</p>
+          Hire me
         </a>
+        </div>
       </div>
       <div className="profile-photo">
-        <img src="profile3.png" alt="tanmoy" />
+        <img src="profile3.png" alt="Tanmoy Debnath" />
       </div>
     </section>
-  )
+  );
 }
