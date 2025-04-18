@@ -22,7 +22,7 @@ export default function Achievements() {
               {
                 title: '1st Runner-Up – Youth Startup Summit (Bangladesh, 2025), Rajshahi & Rangpur',
                 details: [
-                  'Recongnition of taking part in pitch dek presentation as Business Analyst of SystemSage to top venture capitalists, funded 200,000 BDT by Youth Startup Summit, Rajshahi & Rangpur Division for being 1st runners-up. ',
+                  'Recongnition of taking part in pitch dek presentation as Business Analyst of SystemSage to top venture capitalists, funded 200,000 BDT by Youth Startup Summit, Rajshahi & Rangpur for being 1st runners-up. ',
                 ],
                 image:'achievement2.jpg',
               },

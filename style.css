@@ -138,19 +138,27 @@ body, html {
   .learn-more-btn:hover .email-link p {
     color: white;
   }
-.profile-photo{
-  margin-top: 0;
-  height:500px;
-  width: 408px;
+  .profile-photo {
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-}
-  .profile-photo img{
-    margin-top: -352px;
-    height:750px;
-   width: 420px;
+  .profile-photo img {
+    height: auto;
+    width: 100%;
+    max-height: 750px;
+    object-fit: contain;
+    margin-top: -371px; /* Adjust as needed */
   }
   .about-section {
-    padding: 60px 1%;
+    padding: 60px 5%;
+    width: 100%;
+  box-sizing: border-box;
   }
   
   .section-title {
@@ -159,11 +167,12 @@ body, html {
   }
   
   .section-title h1 {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem); /* Responsive font size */
     color: #224165;
     margin-bottom: 10px;
+    padding: 0 15px; /* Add padding to prevent overflow */
+    word-wrap: break-word;
   }
-  
   .section-title p {
     color: #555;
     margin-bottom: 10px;
@@ -253,7 +262,7 @@ body, html {
     z-index: 2; 
   }
   .education-section {
-    padding: 50px 12%;
+    padding: 60px 5%;
   }
   .education-content {
     display: flex;
@@ -456,52 +465,76 @@ body, html {
   }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
-    .nav-links{
-      display: none;
-    }
-    .hero-section {
+    .Navbar {
       padding: 20px;
+      height: auto;
+    }
+    
+    .logo {
+      padding-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .nav-options {
+      padding-right: 0;
+      width: 100%;
+      display: none; /* Hide nav options on mobile or implement hamburger menu */
+    }
+    .Hero-section {
+      flex-direction: column;
+      padding: 100px 20px 40px;
+      height: auto;
+      gap: 40px;
+    }
+    
+    .hero-content {
+      height: auto;
+      text-align: center;
     }
     
     .hero-content h1 {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
     
     .social-icons {
-      position: static;
       flex-direction: row;
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 30px;
     }
     .education-section {
-      padding: 50px 3%;
+      padding: 50px 5%;
+    }
+    
+    .education-content {
+      flex-direction: column;
+      padding: 0;
     }
     .text-content-1 img{
       margin-left:80px;
     }
     .skills-section {
-      padding: 50px 7%;
-  }
-  .skills-grid{
-    gap:30px;
-  }
-  .Hero-section{
-    padding-top: 72px;
-    padding-left: 21px;
-    padding-right: 14px;
-    height: 86.5vh;
-  }
-  .logo {
-    padding-left: 88px;
-}
+      padding: 50px 5%;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
 .profile-photo img {
-  margin-top: -264px;
-  height: 507px;
-  width: 290px;
-  padding-left: 11%;
+  margin-top: 0;
+  height: auto;
+  width: 80%;
+  max-height: 400px;
+  padding-left: 0;
 }
-.about-content{
-  padding-left:7%;
+.about-content {
+  flex-direction: column;
+  padding-left: 5%;
+  gap: 40px;
+}
+.text-content, .text-content-1 {
+  flex: 1 1 100%;
 }
 .text-content-1 h2 {
   width: 392px;
