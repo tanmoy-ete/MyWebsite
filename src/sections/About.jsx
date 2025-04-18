@@ -18,7 +18,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h2>Developing With a Passion While Exploring The World.</h2>
+          <h2 id='head1'>Developing With a Passion While Exploring The World.</h2>
           <div className="underline small"></div>
           <p>
             I'm an undergraduate student with a strong interest in building impactful software solutions that merge technology and creativity. My journey began with a curiosity for how things work, which naturally led me to the world of coding. Whether it’s crafting responsive websites, developing smart IoT systems, or exploring AI integration, I love turning ideas into reality. Beyond the screen, I enjoy exploring new places, learning from different cultures, and drawing inspiration from the world around me. I believe in continuous growth and using technology to make a meaningful difference.
