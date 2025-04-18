@@ -24,6 +24,7 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           className="learn-more-btn"
+          id='btn1'
         >
           Hire me
         </a>

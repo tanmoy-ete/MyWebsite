@@ -536,7 +536,7 @@ body, html {
     .skills-section {
       padding: 50px 5%;
     }
-    .learn-more-btn{
+    #btn1{
       display: none;
     }
     .skills-grid {
