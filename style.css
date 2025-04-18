@@ -114,6 +114,7 @@ body, html {
   }
   
   .learn-more-btn {
+    display: inline-block;
     background-color: transparent;
     border: 2px solid #ef5b4c;
     padding: 8px 24px;
