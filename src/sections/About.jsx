@@ -11,8 +11,7 @@ export default function About() {
       </div>
 
       <div className="about-content">
-        <motion.div
-          className="text-content-1"
+        <motion.div className="text-content-1"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -25,8 +24,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        <motion.div
-          className="image-content"
+        <motion.div className="image-content"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}

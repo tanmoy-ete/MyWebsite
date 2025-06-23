@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 export default function Education() {
+
+
   return (
     <section className='education-section' id='Education'>
       <div className="section-title">
@@ -36,8 +38,7 @@ export default function Education() {
             ],
           },
         ].map((edu, i) => (
-          <motion.div
-            className="text-content-1"
+          <motion.div className="text-content-1"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
@@ -46,9 +47,9 @@ export default function Education() {
           >
             <h2>{edu.title}</h2>
             <div className="underline small"></div>
-            {edu.details.map((text, idx) => (
-              <p key={idx}>{text}</p>
-            ))}
+            
+              <p >{edu.details}</p>
+            
           </motion.div>
         ))}
       </div>

@@ -39,9 +39,7 @@ export default function Experience() {
               >
                 <h2>{edu.title}</h2>
                 <div className="underline small"></div>
-                {edu.details.map((text, idx) => (
-                  <p key={idx}>{text}</p>
-                ))}
+                  <p>{edu.details}</p>
                 <div className='learn-more-btn-1'>
                 <button className='learn-more-btn'>
                     <a 

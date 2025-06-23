@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
-const Footer = () => {
+export default function Footer() {
   const [question, setQuestion] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -96,4 +96,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

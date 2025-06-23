@@ -13,23 +13,19 @@ const portfolioItems = [
     img: 'portfolio2.png',
     link: 'https://silver-alpaca-a44723.netlify.app/',
   },
-  {
-    title: 'Beauty Pronounced',
-    img: '/images/portfolio3.jpg',
-    link: 'https://example.com/beauty',
-  },
+  
 ];
 
 export default function Portfolio() {
   const settings = {
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    infinite: true,     //the loop goes infinitely 
+    speed: 3000,        //slide transition speed
+    slidesToShow: 3,    //3 slides in the screen
+    slidesToScroll: 1,  //moves 1 slide at a time
+    autoplay: true,     //starts sliding automatically
+    autoplaySpeed: 3000,//changes slide in 3 seconds
     cssEase: "linear",
-    pauseOnHover: true,
+    pauseOnHover: true, //pauses automatically when mouse hovers2
     responsive: [
       {
         breakpoint: 1024,
@@ -55,7 +51,7 @@ export default function Portfolio() {
         transition={{ duration: 1.5 }}
         viewport={{ once: false, amount: 0.2 }}
       >
-      <Slider {...settings}>
+      <Slider {...settings}>      
         {portfolioItems.map((item, idx) => (
           <div className="portfolio-card" key={idx}>
             <a href={item.link} target="_blank" rel="noopener noreferrer">

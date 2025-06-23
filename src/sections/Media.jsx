@@ -38,20 +38,18 @@ export default function Media() {
           },
           
         ].map((edu, i) => (
-          <motion.div
-            className="text-content-1"
+          <motion.div className="text-content-1"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
             viewport={{ once: false, amount: 0.2 }}
             key={i}
           >
-            <img src={edu.image} alt="1" id='image'/>
-            <h2>{edu.title}</h2>
-            <div className="underline small"></div>
-            {edu.details.map((text, idx) => (
-              <p key={idx}>{text}</p>
-            ))}
+              <img src={edu.image} alt="1" id='image'/>
+              <h2>{edu.title}</h2>
+              <div className="underline small"></div>
+             
+              <p>{edu.details}</p>
             <div className="learn-more-btn-1">
             <button className='learn-more-btn'>
                     <a 

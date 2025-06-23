@@ -44,9 +44,7 @@ export default function Achievements() {
               >
                 <h2>{edu.title}</h2>
                 <div className="underline small"></div>
-                {edu.details.map((text, idx) => (
-                  <p key={idx}>{text}</p>
-                ))}
+                <p>{edu.details}</p>
                 <img src={edu.image} alt="1" />
               </motion.div>
             ))}
