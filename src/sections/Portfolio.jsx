@@ -13,6 +13,11 @@ const portfolioItems = [
     img: 'portfolio2.png',
     link: 'https://silver-alpaca-a44723.netlify.app/',
   },
+  {
+    title: "Modern Responsive Portfolio Website( demo 2)",
+    img: 'portfolio3.jpeg',
+    link: 'https://poetic-conkies-4835e0.netlify.app/',
+  },
   
 ];
 
