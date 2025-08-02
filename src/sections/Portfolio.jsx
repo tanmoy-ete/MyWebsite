@@ -18,7 +18,11 @@ const portfolioItems = [
     img: 'portfolio3.jpeg',
     link: 'https://poetic-conkies-4835e0.netlify.app/',
   },
-  
+  {
+    title: "Clone Demo Frontend Website",
+    img: 'portfolio4.png',
+    link: 'https://ngofound.netlify.app/',
+  },
 ];
 
 export default function Portfolio() {
